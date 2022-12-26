@@ -8,7 +8,50 @@
 }
 
 .name {
-  font-family: var(--font-main);
+  font-family: var(--font-mono);
+  font-weight: bolder;
+  position: relative;
+}
+
+.name::before,
+.name::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.name::before {
+  background: var(--clr-primary);
+  /* 24 steps - length of the character*/
+  animation: typewriter 4s steps(16) 1s forwards;
+}
+
+.name::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter 4s steps(16) 1s forwards, blink 750ms steps(16) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .description {

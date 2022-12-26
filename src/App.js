@@ -39,7 +39,7 @@ function App() {
 
   const handleButtonClick = () => {
     console.log("triggerd");
-    window.scrollBy({
+    window.scrollTo({
       top: window.innerHeight * 0.9,
       behavior: "smooth",
     });

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
 
 :root {
   box-sizing: border-box;
@@ -12,6 +13,7 @@
 
   --font-main: "Alfa Slab One";
   --font-secondary: "Josefin Sans";
+  --font-mono: "Roboto Mono";
 
   font-size: 1em;
 }

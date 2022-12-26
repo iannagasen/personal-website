@@ -7,7 +7,7 @@ const Home = ({ clickHandler }) => {
     <div className={classes.main}>
       <div className={classes.container}>
         <div>Hi, I'm</div>
-        <div className={classes.name}>Ian Neil.</div>
+        <span className={`${classes.name} name`}>Ian Neil Agasen.</span>
         <div className={classes.description}>
           A fullstack software developer
         </div>
