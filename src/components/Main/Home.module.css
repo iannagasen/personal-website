@@ -1,0 +1,19 @@
+.main {
+  height: 90vh;
+}
+
+.container {
+  font-size: 3rem;
+  font-family: var(--font-secondary);
+}
+
+.name {
+  font-family: var(--font-main);
+}
+
+.description {
+  font-family: var(--font-main);
+  font-size: 2rem;
+  color: var(--clr-secondary-trans);
+  /* opacity: 0.5; */
+}

@@ -1,0 +1,7 @@
+.container {
+  min-height: 70vh;
+  padding-top: 2em;
+
+  font-size: 4em;
+  font-family: var(--font-main);
+}

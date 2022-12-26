@@ -1,0 +1,20 @@
+.button {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-family: var(--font-secondary);
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
+  padding: 0.45em 1.2em 0.25em 1.2em;
+  border-radius: 0.9em;
+  transition: all 0.3s ease-in-out;
+  /* box-shadow: 0.1em 0.1em 0.5em #124; */
+}
+
+.button:hover {
+  /* background-color: var(--clr-secondary); */
+  background-color: var(--clr-primary);
+  border: 0.1em solid var(--clr-secondary);
+  color: var(--clr-secondary);
+  font-weight: bold;
+}
