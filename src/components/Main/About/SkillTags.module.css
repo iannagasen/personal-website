@@ -1,0 +1,31 @@
+.skillTags > .innerFlex + .innerFlex {
+  margin-top: 0.4rem;
+}
+
+.innerFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+
+.skill {
+  line-height: 1.7rem;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  border-radius: 0.5em;
+  padding: 0 0.9em 0 0.9em;
+  background-color: var(--clr-secondary-trans);
+  white-space: nowrap;
+}
+
+.randomColor1 {
+  background-color: #dd290dd7;
+}
+
+.randomColor2 {
+  background-color: #e38f1ad3;
+}
+
+.randomColor3 {
+  background-color: #d14b1fe7;
+}

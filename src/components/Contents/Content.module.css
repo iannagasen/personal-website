@@ -4,4 +4,6 @@
 
   font-size: 4em;
   font-family: var(--font-main);
+
+  z-index: var(--index-content);
 }

@@ -2,16 +2,17 @@
   position: fixed;
   width: inherit;
   max-width: inherit;
+  z-index: var(--index-navbar);
 }
 
 .nav {
   display: flex;
-  background-color: var(--clr-primary);
+  background-color: var(--bg-color);
   height: 10vh;
 
   font-family: var(--font-secondary);
   font-size: 1.2rem;
-  color: black;
+  color: var(--navbar-font-color);
 
   align-items: center;
   list-style: none;
@@ -21,7 +22,7 @@
 
 .nav > .logo {
   margin-right: auto;
-  color: var(--clr-secondary);
+  color: var(--navbar-font-color);
   font-weight: bolder;
 }
 
@@ -34,12 +35,3 @@
   margin-right: 0;
   padding-right: 0;
 }
-
-/* .nav > ul > li {
-  margin-left: 0.15em;
-  border-right: 0.15em solid var(--clr-secondary);
-}
-
-.nav > ul > li:last-child {
-  border-right: none;
-} */

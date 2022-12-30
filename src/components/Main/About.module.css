@@ -1,3 +1,18 @@
 .container {
+  display: flex;
   height: 90vh;
+  padding-bottom: 20vh;
+}
+
+.container > * + * {
+  margin-left: 0.2em;
+}
+
+.firstItem {
+  flex: 3;
+  align-self: center;
+}
+
+.secondItem {
+  flex: 4;
 }

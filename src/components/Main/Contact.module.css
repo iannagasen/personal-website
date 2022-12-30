@@ -1,3 +1,7 @@
 .container {
   height: 90vh;
 }
+
+.icon {
+  border-radius: 0.5em;
+}

@@ -1,0 +1,27 @@
+.icons {
+  --box-size: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: var(--box-size);
+  height: var(--box-size);
+  justify-content: center;
+  align-items: center;
+  /* left: 500px; */
+}
+
+.icons > div {
+  --absolute-center: calc(var(--box-size) / 2);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  rotate: calc(360deg / 17 * var(--i));
+  transform-origin: var(--absolute-center) var(--absolute-center);
+  /* transition: all 2000ms ease-out; */
+}
+
+.icons > div > svg {
+  rotate: calc(360deg / -17 * var(--i));
+  transform-origin: center;
+  /* transition: all 2000ms ease-out; */
+}

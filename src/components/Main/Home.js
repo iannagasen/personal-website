@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../UI/Button";
 import classes from "./Home.module.css";
 
 const Home = ({ clickHandler }) => {
+  const [theme, setTheme] = useState("light");
+
+  const changeTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
   return (
     <div className={classes.main}>
       <div className={classes.container}>
@@ -13,6 +23,7 @@ const Home = ({ clickHandler }) => {
         </div>
       </div>
       <Button clickHandler={clickHandler}>Discover</Button>
+      <Button clickHandler={changeTheme}>Change Theme</Button>
     </div>
   );
 };
