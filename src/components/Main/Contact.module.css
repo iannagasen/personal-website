@@ -4,4 +4,9 @@
 
 .icon {
   border-radius: 0.5em;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: red;
 }

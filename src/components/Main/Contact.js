@@ -9,8 +9,16 @@ const Contact = () => {
   return (
     <div className={classes.container}>
       <div>Contact Section</div>
-      <AiFillLinkedin className={classes.icon} />
-      <BsGithub />
+      <AiFillLinkedin
+        className={classes.icon}
+        onClick={() =>
+          window.open("https://www.linkedin.com/in/ian-neil-agasen-64236a189/")
+        }
+      />
+      <BsGithub
+        className={classes.icon}
+        onClick={() => window.open("https://github.com/iannagasen")}
+      />
     </div>
   );
 };
